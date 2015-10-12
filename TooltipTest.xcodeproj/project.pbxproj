@@ -13,9 +13,12 @@
 		AD3892A41BCC4919005BB27F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3892A21BCC4919005BB27F /* Main.storyboard */; };
 		AD3892A61BCC4919005BB27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3892A51BCC4919005BB27F /* Assets.xcassets */; };
 		AD3892A91BCC4919005BB27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3892A71BCC4919005BB27F /* LaunchScreen.storyboard */; };
+		AD3892B21BCC4A10005BB27F /* FormSheetTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3892B11BCC4A10005BB27F /* FormSheetTestViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B20056433B30D7433CF496D5 /* libPods-TooltipTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 471F74A224B57F8AD97DB99E /* libPods-TooltipTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471F74A224B57F8AD97DB99E /* libPods-TooltipTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TooltipTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3892961BCC4919005BB27F /* TooltipTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooltipTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD38929A1BCC4919005BB27F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD38929C1BCC4919005BB27F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,10 @@
 		AD3892A51BCC4919005BB27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD3892A81BCC4919005BB27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3892AA1BCC4919005BB27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD3892B01BCC4A10005BB27F /* FormSheetTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormSheetTestViewController.h; sourceTree = "<group>"; };
+		AD3892B11BCC4A10005BB27F /* FormSheetTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormSheetTestViewController.m; sourceTree = "<group>"; };
+		DC9ECD382C7F1606DAA5F61D /* Pods-TooltipTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TooltipTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TooltipTest/Pods-TooltipTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E97207053168A35F746676BB /* Pods-TooltipTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TooltipTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TooltipTest/Pods-TooltipTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20056433B30D7433CF496D5 /* libPods-TooltipTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D9A1AD9CB3D4BBE3A68E236 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC9ECD382C7F1606DAA5F61D /* Pods-TooltipTest.debug.xcconfig */,
+				E97207053168A35F746676BB /* Pods-TooltipTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AD38928D1BCC4919005BB27F = {
 			isa = PBXGroup;
 			children = (
 				AD3892981BCC4919005BB27F /* TooltipTest */,
 				AD3892971BCC4919005BB27F /* Products */,
+				2D9A1AD9CB3D4BBE3A68E236 /* Pods */,
+				ECC86E7F45DF976E05028753 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +81,8 @@
 				AD38929D1BCC4919005BB27F /* AppDelegate.m */,
 				AD38929F1BCC4919005BB27F /* ViewController.h */,
 				AD3892A01BCC4919005BB27F /* ViewController.m */,
+				AD3892B01BCC4A10005BB27F /* FormSheetTestViewController.h */,
+				AD3892B11BCC4A10005BB27F /* FormSheetTestViewController.m */,
 				AD3892A21BCC4919005BB27F /* Main.storyboard */,
 				AD3892A51BCC4919005BB27F /* Assets.xcassets */,
 				AD3892A71BCC4919005BB27F /* LaunchScreen.storyboard */,
@@ -79,6 +100,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ECC86E7F45DF976E05028753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				471F74A224B57F8AD97DB99E /* libPods-TooltipTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD3892AD1BCC4919005BB27F /* Build configuration list for PBXNativeTarget "TooltipTest" */;
 			buildPhases = (
+				9A0D44EE4B9CDD4AE03CA8E4 /* Check Pods Manifest.lock */,
 				AD3892921BCC4919005BB27F /* Sources */,
 				AD3892931BCC4919005BB27F /* Frameworks */,
 				AD3892941BCC4919005BB27F /* Resources */,
+				B2F69719D56CFAC57E1AE90A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,11 +175,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9A0D44EE4B9CDD4AE03CA8E4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2F69719D56CFAC57E1AE90A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TooltipTest/Pods-TooltipTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD3892921BCC4919005BB27F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD3892B21BCC4A10005BB27F /* FormSheetTestViewController.m in Sources */,
 				AD3892A11BCC4919005BB27F /* ViewController.m in Sources */,
 				AD38929E1BCC4919005BB27F /* AppDelegate.m in Sources */,
 				AD38929B1BCC4919005BB27F /* main.m in Sources */,
@@ -261,6 +326,7 @@
 		};
 		AD3892AE1BCC4919005BB27F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9ECD382C7F1606DAA5F61D /* Pods-TooltipTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TooltipTest/Info.plist;
@@ -272,6 +338,7 @@
 		};
 		AD3892AF1BCC4919005BB27F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97207053168A35F746676BB /* Pods-TooltipTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TooltipTest/Info.plist;
@@ -300,6 +367,7 @@
 				AD3892AF1BCC4919005BB27F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
