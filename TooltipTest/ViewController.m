@@ -39,7 +39,7 @@
 }
 
 - (void)viewTapped {
-    NSLog(@"tapped");
+    NSLog(@"tapped outside");
 }
 
 - (void)didReceiveMemoryWarning {

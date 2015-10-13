@@ -19,6 +19,16 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor redColor];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(20, 20, 100, 40);
+    button.backgroundColor = [UIColor greenColor];
+    [button addTarget:self action:@selector(viewTapped) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)viewTapped {
+    NSLog(@"tapped button");
 }
 
 - (void)didReceiveMemoryWarning {
